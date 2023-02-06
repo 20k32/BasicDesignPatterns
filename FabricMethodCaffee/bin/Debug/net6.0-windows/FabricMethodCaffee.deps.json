@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FabricMethodCaffee/1.0.0": {
+        "dependencies": {
+          "FabricMethodLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FabricMethodCaffee.dll": {}
+        }
+      },
+      "FabricMethodLibrary/1.0.0": {
+        "runtime": {
+          "FabricMethodLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FabricMethodCaffee/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FabricMethodLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

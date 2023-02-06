@@ -1,0 +1,12 @@
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\bin\Debug\net6.0-windows\FabricMethodLibrary.deps.json
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\bin\Debug\net6.0-windows\FabricMethodLibrary.dll
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\bin\Debug\net6.0-windows\FabricMethodLibrary.pdb
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.csproj.AssemblyReference.cache
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.AssemblyInfoInputs.cache
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.AssemblyInfo.cs
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.csproj.CoreCompileInputs.cache
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.dll
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\refint\FabricMethodLibrary.dll
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\FabricMethodLibrary.pdb
+C:\Users\egorm\source\repos\FabricMethodCaffee\FabricMethodLibrary\obj\Debug\net6.0-windows\ref\FabricMethodLibrary.dll
