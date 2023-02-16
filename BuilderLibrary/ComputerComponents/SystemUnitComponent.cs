@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prototype;
+using System;
 
 namespace BuilderLibrary
 {
@@ -6,6 +7,11 @@ namespace BuilderLibrary
     {
         public SystemUnitComponent(string name, double price, int count) : base(name, price, count)
         {
+        }
+
+        public override IPrototype Clone()
+        {
+            return new SystemUnitComponent(Name, Price,Count);
         }
     }
 }

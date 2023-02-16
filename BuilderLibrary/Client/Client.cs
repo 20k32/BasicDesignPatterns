@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Windows.Automation.Peers;
+﻿using Prototype;
+using System;
 
 namespace BuilderLibrary
 {
-    public class Client
+    public class Client : IPrototype
     {
         private AbstractBuilder builder = null!;
 
@@ -53,6 +52,38 @@ namespace BuilderLibrary
                 result += item.Price;
             }
             return result;
+        }
+
+        public IPrototype DeepCopyClone()
+        {
+            AbstractBuilder builderClone = (AbstractBuilder)builder.DeepCopyClone();
+            return new Client(builderClone)
+            {
+                MotherBroad = (AbstractComputerComponent)this.MotherBroad.Clone(),
+                PowerSupplyUnit = (AbstractComputerComponent)this.PowerSupplyUnit.Clone(),
+                Processor = (AbstractComputerComponent)this.Processor.Clone(),
+                RAM = (AbstractComputerComponent)this.RAM.Clone(),
+                ROM = (AbstractComputerComponent)this.ROM.Clone(),
+                SystemUnit = (AbstractComputerComponent)this.SystemUnit.Clone(),
+                VideoCard = (AbstractComputerComponent)this.VideoCard.Clone(),
+                CoolingSystem = (AbstractComputerComponent)this.CoolingSystem.Clone(),
+            };
+        }
+
+        public IPrototype Clone()
+        {
+            AbstractBuilder builderClone = (AbstractBuilder)builder.Clone();
+            return new Client(builderClone)
+            {
+                MotherBroad = this.MotherBroad,
+                PowerSupplyUnit = this.PowerSupplyUnit,
+                Processor = this.Processor,
+                RAM = this.RAM,
+                ROM = this.ROM,
+                SystemUnit = this.SystemUnit,
+                VideoCard = this.VideoCard,
+                CoolingSystem = this.CoolingSystem,
+            };
         }
     }
 }

@@ -1,10 +1,9 @@
-﻿using System.CodeDom;
-using System.Windows;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Collections.Generic;
 using BuilderLibrary;
 using System;
-using System.Windows.Media;
+using Prototype;
+
 
 namespace FabricMethodCaffee
 {
@@ -34,6 +33,8 @@ namespace FabricMethodCaffee
 
         private ClientFluentBuilder client = null!;
         private Client currentClient = null!;
+        private Client clonedClient = null!;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -56,7 +57,6 @@ namespace FabricMethodCaffee
 
         private void BuildButton_Click(object sender, RoutedEventArgs e)
         {
-            LogTextBox.Clear();
             client = new ClientFluentBuilder(new PCBuilder(new Product()));
 
             int index = MotherbroadBox.SelectedIndex;
@@ -117,6 +117,26 @@ namespace FabricMethodCaffee
         {
             LogTextBox.Text += message;
             LogTextBox.Text += Environment.NewLine;
+        }
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (clonedClient != null)
+            {
+                clonedClient.GetList();
+                NotifyUserInTextBox(Environment.NewLine + "Total price: " + clonedClient.GetTotalPrice().ToString());
+            }
+        }
+
+        private void CloneButton_Click(object sender, RoutedEventArgs e)
+        {
+            clonedClient = ((Client)currentClient.DeepCopyClone());
+            clonedClient.NotifyUser = NotifyUserInTextBox;
+        }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            LogTextBox.Clear();
         }
     }
 }

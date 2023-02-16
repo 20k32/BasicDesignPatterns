@@ -1,8 +1,9 @@
+using Prototype;
 using System;
 
 namespace BuilderLibrary
 {
-    public abstract class AbstractBuilder
+    public abstract class AbstractBuilder : IPrototype
     {
         protected Product product;
 
@@ -28,5 +29,9 @@ namespace BuilderLibrary
         public abstract void BuildCoolingSystem(AbstractComputerComponent coolingSystem);
 
         public abstract Product GetPC();
+
+        public abstract IPrototype DeepCopyClone();
+
+        public abstract IPrototype Clone();
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Prototype;
+using System;
 using System.Diagnostics;
 using System.Linq;
 
 namespace BuilderLibrary
 {
-    public abstract class AbstractComputerComponent
+    public abstract class AbstractComputerComponent : IPrototype
     {
         private double price;
         public double Price
@@ -47,5 +48,11 @@ namespace BuilderLibrary
         {
             return "Product: " + Name + ", Price: " + Price + ".";
         }
+
+        public IPrototype DeepCopyClone()
+        {
+            return Clone();
+        }
+        public abstract IPrototype Clone();
     }
 }

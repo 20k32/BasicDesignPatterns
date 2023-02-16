@@ -1,4 +1,6 @@
-﻿namespace BuilderLibrary
+﻿using Prototype;
+
+namespace BuilderLibrary
 {
     public class PCBuilder : AbstractBuilder
     {
@@ -45,9 +47,21 @@
             product.AddProduct(videoCard);
         }
 
+        public override IPrototype Clone()
+        {
+            return new PCBuilder((Product)product.Clone());
+        }
+
+        public override IPrototype DeepCopyClone()
+        {
+            return new PCBuilder((Product)product.DeepCopyClone());
+        }
+
         public override Product GetPC()
         {
             return product;
         }
+
+
     }
 }

@@ -4,7 +4,7 @@ namespace FabricMethodLibrary
 {
     public class AmericanoCafe : AbstractCafe
     {
-        private AmericanoCoffeee americanoCoffeeCup;
+        private AmericanoCoffeee americanoCoffeeCup = null!;
         public AmericanoCafe(string name, Action<string> notifyUser) : base(name, notifyUser)
         {
         }

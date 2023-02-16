@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Prototype;
 
 namespace BuilderLibrary
 {
@@ -6,6 +6,11 @@ namespace BuilderLibrary
     {
         public ROMComponent(string name, double price, int count) : base(name, price, count)
         {
+        }
+
+        public override IPrototype Clone()
+        {
+            return new ROMComponent(Name, Price, Count);
         }
     }
 }

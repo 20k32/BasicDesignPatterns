@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "BuilderLibrary/1.0.0": {
+        "dependencies": {
+          "PrototypeLibrary": "1.0.0"
+        },
         "runtime": {
           "BuilderLibrary.dll": {}
+        }
+      },
+      "PrototypeLibrary/1.0.0": {
+        "runtime": {
+          "PrototypeLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BuilderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrototypeLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

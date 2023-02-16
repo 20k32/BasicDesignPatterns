@@ -1,9 +1,11 @@
 ﻿using Microsoft.VisualBasic;
+using Prototype;
+using System;
 using System.Collections.Generic;
 
 namespace BuilderLibrary
 {
-    public class Product
+    public class Product : IPrototype
     {
         private List<AbstractComputerComponent> ComputerComponents = null!;
 
@@ -40,6 +42,23 @@ namespace BuilderLibrary
             {
                 yield return ComputerComponents[i++];
             }
+        }
+
+        public IPrototype DeepCopyClone()
+        {
+            Product productCopy = new Product();
+
+            foreach (AbstractComputerComponent component in ComputerComponents)
+            {
+                productCopy.AddProduct(component);
+            }
+
+            return productCopy;
+        }
+
+        public IPrototype Clone()
+        {
+            return new Product() { ComputerComponents = this.ComputerComponents };
         }
     }
 }

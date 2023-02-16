@@ -16,6 +16,9 @@
         }
       },
       "BuilderLibrary/1.0.0": {
+        "dependencies": {
+          "PrototypeLibrary": "1.0.0"
+        },
         "runtime": {
           "BuilderLibrary.dll": {}
         }

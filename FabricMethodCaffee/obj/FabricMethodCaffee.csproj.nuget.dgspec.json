@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj": {
+                "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
