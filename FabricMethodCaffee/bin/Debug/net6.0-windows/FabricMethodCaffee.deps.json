@@ -8,15 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "FabricMethodCaffee/1.0.0": {
         "dependencies": {
-          "FabricMethodLibrary": "1.0.0"
+          "BuilderLibrary": "1.0.0",
+          "PrototypeLibrary": "1.0.0"
         },
         "runtime": {
           "FabricMethodCaffee.dll": {}
         }
       },
-      "FabricMethodLibrary/1.0.0": {
+      "BuilderLibrary/1.0.0": {
         "runtime": {
-          "FabricMethodLibrary.dll": {}
+          "BuilderLibrary.dll": {}
+        }
+      },
+      "PrototypeLibrary/1.0.0": {
+        "runtime": {
+          "PrototypeLibrary.dll": {}
         }
       }
     }
@@ -27,7 +33,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FabricMethodLibrary/1.0.0": {
+    "BuilderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrototypeLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

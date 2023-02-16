@@ -2,14 +2,27 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "FabricMethodLibrary/1.0.0": {
+      "BuilderLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/FabricMethodLibrary.dll": {}
+          "bin/placeholder/BuilderLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FabricMethodLibrary.dll": {}
+          "bin/placeholder/BuilderLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "PrototypeLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PrototypeLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrototypeLibrary.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -18,15 +31,21 @@
     }
   },
   "libraries": {
-    "FabricMethodLibrary/1.0.0": {
+    "BuilderLibrary/1.0.0": {
       "type": "project",
-      "path": "../FabricMethodLibrary/FabricMethodLibrary.csproj",
-      "msbuildProject": "../FabricMethodLibrary/FabricMethodLibrary.csproj"
+      "path": "../BuilderLibrary/BuilderLibrary.csproj",
+      "msbuildProject": "../BuilderLibrary/BuilderLibrary.csproj"
+    },
+    "PrototypeLibrary/1.0.0": {
+      "type": "project",
+      "path": "../Prototype/PrototypeLibrary.csproj",
+      "msbuildProject": "../Prototype/PrototypeLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "FabricMethodLibrary >= 1.0.0"
+      "BuilderLibrary >= 1.0.0",
+      "PrototypeLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -56,8 +75,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FabricMethodLibrary\\FabricMethodLibrary.csproj": {
-              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FabricMethodLibrary\\FabricMethodLibrary.csproj"
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj"
             }
           }
         }

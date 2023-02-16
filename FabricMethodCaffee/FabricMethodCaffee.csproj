@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FabricMethodLibrary\FabricMethodLibrary.csproj" />
+    <ProjectReference Include="..\BuilderLibrary\BuilderLibrary.csproj" />
+    <ProjectReference Include="..\Prototype\PrototypeLibrary.csproj" />
   </ItemGroup>
 
 </Project>
