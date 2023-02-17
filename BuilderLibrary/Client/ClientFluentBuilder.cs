@@ -2,7 +2,7 @@
 {
     public class ClientFluentBuilder
     {
-        private Client client;
+        protected Client client { get; set; }
 
         public ClientFluentBuilder(AbstractBuilder Builder)
         {
