@@ -16,7 +16,7 @@ namespace BuilderLibrary
             ComputerComponents = new List<AbstractComputerComponent>();
         }
 
-        private bool AddValidate() => ProductsCount + 1 < 10 ? true : false;
+        private bool AddValidate() => ProductsCount + 1 < 9 ? true : false;
         private bool RemoveValidate() => ProductsCount - 1 > -1 ? true : false;
         
         public void AddProduct(AbstractComputerComponent computerComponent)
