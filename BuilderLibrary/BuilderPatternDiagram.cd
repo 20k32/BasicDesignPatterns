@@ -1,2 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="BuilderLibrary.ClientFluentBuilder">
+    <Position X="13.5" Y="4.25" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABABAAgAAAAAAAAABAAAAAgAAIAAIABAAAAAA=</HashCode>
+      <FileName>Client\ClientFluentBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BuilderLibrary.AbstractBuilder">
+    <Position X="7.25" Y="0.5" Width="5" />
+    <AssociationLine Name="product" Type="BuilderLibrary.Product" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="1.938" />
+        <Point X="12.625" Y="1.938" />
+        <Point X="12.625" Y="1.938" />
+        <Point X="13.5" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ggAAAACAggAAAAAAAAEACAAIAAAAAAAAAEEAgAAAABA=</HashCode>
+      <FileName>Builder\AbstractBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="product" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BuilderLibrary.PCBuilder">
+    <Position X="0.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAACAgAAAAAAAAAEACAAIAAAAAAAAAEEAgAAAABA=</HashCode>
+      <FileName>Builder\PCBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.Product">
+    <Position X="13.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAADAAAAAAAAAAAAIQAAQAAABAAAAAAAAAAAAAJA=</HashCode>
+      <FileName>Builder\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BuilderLibrary.Client">
+    <Position X="8.75" Y="4.25" Width="2.75" />
+    <AssociationLine Name="builder" Type="BuilderLibrary.AbstractBuilder" FixedFromPoint="true">
+      <Path>
+        <Point X="9.875" Y="4.25" />
+        <Point X="9.875" Y="3.719" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MotherBroad" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.517" Y="6.767" />
+        <Point X="9.517" Y="7.142" />
+        <Point X="10.35" Y="7.142" />
+        <Point X="10.35" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.015" Y="1.227" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PowerSupplyUnit" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.861" Y="6.767" />
+        <Point X="9.861" Y="7.142" />
+        <Point X="9.262" Y="7.142" />
+        <Point X="9.262" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.367" Y="2.197" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Processor" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.291" Y="6.767" />
+        <Point X="9.291" Y="7.142" />
+        <Point X="10.837" Y="7.142" />
+        <Point X="10.837" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.036" Y="0.685" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RAM" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.057" Y="6.767" />
+        <Point X="10.057" Y="7.142" />
+        <Point X="11.175" Y="7.142" />
+        <Point X="11.175" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.006" Y="1.018" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ROM" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.284" Y="6.767" />
+        <Point X="10.284" Y="7.142" />
+        <Point X="9.712" Y="7.142" />
+        <Point X="9.712" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="0.706" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="SystemUnit" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.674" Y="6.767" />
+        <Point X="9.674" Y="7.142" />
+        <Point X="11.7" Y="7.142" />
+        <Point X="11.7" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.078" Y="0.706" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="VideoCard" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.094" Y="6.767" />
+        <Point X="9.094" Y="7.142" />
+        <Point X="8.888" Y="7.142" />
+        <Point X="8.888" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.047" Y="1.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CoolingSystem" Type="BuilderLibrary.AbstractComputerComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.909" Y="6.767" />
+        <Point X="8.909" Y="7.142" />
+        <Point X="12.375" Y="7.142" />
+        <Point X="12.375" Y="10" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.036" Y="1.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQgAAOAAACAggAAAAAAAAAAAAAJEAAAAAAAAABEABI=</HashCode>
+      <FileName>Client\Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="builder" />
+      <Property Name="MotherBroad" />
+      <Property Name="PowerSupplyUnit" />
+      <Property Name="Processor" />
+      <Property Name="RAM" />
+      <Property Name="ROM" />
+      <Property Name="SystemUnit" />
+      <Property Name="VideoCard" />
+      <Property Name="CoolingSystem" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BuilderLibrary.AbstractComputerComponent">
+    <Position X="8.25" Y="10" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAAQAAAAAEBAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\AbstractComputerComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BuilderLibrary.AbstractCoolingSystemComponent">
+    <Position X="3.5" Y="14" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComputerComponents\CoolingSystemComponent\AbstractCoolingSystemComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.CoolerComponent">
+    <Position X="0.5" Y="15.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\CoolingSystemComponent\CoolerComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.WaterCoolingComponent">
+    <Position X="4.75" Y="15.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\CoolingSystemComponent\WaterCoolingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.MotherbroadComponent">
+    <Position X="11.75" Y="17.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\MotherbroadComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.PowerSupplyUnitComponent">
+    <Position X="16.5" Y="17.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\PowerSupplyUnitComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.ProcessorComponent">
+    <Position X="13.75" Y="14" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\Processor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.RAMComponent">
+    <Position X="9.5" Y="14" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\RAMComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.ROMComponent">
+    <Position X="10" Y="16" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\ROMComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.SystemUnitComponent">
+    <Position X="14" Y="16" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\SystemUnitComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderLibrary.VideoCardComponent">
+    <Position X="7.25" Y="17.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComputerComponents\VideoCardComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Prototype.IPrototype">
+    <Position X="2.5" Y="8" Width="2.25" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
