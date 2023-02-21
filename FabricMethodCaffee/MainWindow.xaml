@@ -12,7 +12,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox Grid.Column="0">
+        <ListBox x:Name="ContentListBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top">
             <RadioButton x:Name="BinRadioButton"  Content="to bin" Click="BinRadioButton_Click"/>
             <RadioButton x:Name="TxtRadioButton"  Content="to txt" Click="TxtRadioButton_Click"/>
             <RadioButton x:Name="JsonRadioButton" Content="to json" Click="JsonRadioButton_Click"/>
