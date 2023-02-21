@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Adapter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Adapter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Adapter.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "BuilderLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -34,6 +47,11 @@
     }
   },
   "libraries": {
+    "Adapter/1.0.0": {
+      "type": "project",
+      "path": "../Adapter/Adapter.csproj",
+      "msbuildProject": "../Adapter/Adapter.csproj"
+    },
     "BuilderLibrary/1.0.0": {
       "type": "project",
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
@@ -47,6 +65,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Adapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
       "PrototypeLibrary >= 1.0.0"
     ]
@@ -78,6 +97,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Adapter\\Adapter.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Adapter\\Adapter.csproj"
+            },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
             },

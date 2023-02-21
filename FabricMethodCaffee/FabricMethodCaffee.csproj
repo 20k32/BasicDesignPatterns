@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Adapter\Adapter.csproj" />
     <ProjectReference Include="..\BuilderLibrary\BuilderLibrary.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeLibrary.csproj" />
   </ItemGroup>

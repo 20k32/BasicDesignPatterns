@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\bin\Debug\net6.0-windows\Adapter.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\bin\Debug\net6.0-windows\Adapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\bin\Debug\net6.0-windows\Adapter.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\refint\Adapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\Adapter.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\Adapter\obj\Debug\net6.0-windows\ref\Adapter.dll

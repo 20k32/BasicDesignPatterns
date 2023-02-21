@@ -8,11 +8,17 @@
     ".NETCoreApp,Version=v6.0": {
       "FabricMethodCaffee/1.0.0": {
         "dependencies": {
+          "Adapter": "1.0.0",
           "BuilderLibrary": "1.0.0",
           "PrototypeLibrary": "1.0.0"
         },
         "runtime": {
           "FabricMethodCaffee.dll": {}
+        }
+      },
+      "Adapter/1.0.0": {
+        "runtime": {
+          "Adapter.dll": {}
         }
       },
       "BuilderLibrary/1.0.0": {
@@ -32,6 +38,11 @@
   },
   "libraries": {
     "FabricMethodCaffee/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Adapter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
