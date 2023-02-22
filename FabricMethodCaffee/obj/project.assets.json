@@ -15,6 +15,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "ArrayListAdapter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ArrayListAdapter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArrayListAdapter.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "BuilderLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -52,6 +65,11 @@
       "path": "../Adapter/Adapter.csproj",
       "msbuildProject": "../Adapter/Adapter.csproj"
     },
+    "ArrayListAdapter/1.0.0": {
+      "type": "project",
+      "path": "../ArrayListAdapter/ArrayListAdapter.csproj",
+      "msbuildProject": "../ArrayListAdapter/ArrayListAdapter.csproj"
+    },
     "BuilderLibrary/1.0.0": {
       "type": "project",
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
@@ -66,6 +84,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Adapter >= 1.0.0",
+      "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
       "PrototypeLibrary >= 1.0.0"
     ]
@@ -99,6 +118,9 @@
           "projectReferences": {
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Adapter\\Adapter.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Adapter\\Adapter.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ArrayListAdapter\\ArrayListAdapter.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ArrayListAdapter\\ArrayListAdapter.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"

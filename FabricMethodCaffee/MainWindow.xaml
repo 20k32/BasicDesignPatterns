@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FabricMethodCaffee"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStartupLocation="CenterScreen" FontFamily="JetBrains Mono" FontSize="16" MinWidth="850" MinHeight="390">
+        Title="MainWindow" WindowStartupLocation="CenterScreen" 
+        FontFamily="JetBrains Mono" 
+        FontSize="16" MinWidth="850"
+        MinHeight="390"
+        Background="DimGray">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -16,7 +20,7 @@
             <RadioButton x:Name="BinRadioButton"  Content="to bin" Click="BinRadioButton_Click"/>
             <RadioButton x:Name="TxtRadioButton"  Content="to txt" Click="TxtRadioButton_Click"/>
             <RadioButton x:Name="JsonRadioButton" Content="to json" Click="JsonRadioButton_Click"/>
-            <RadioButton x:Name="XamlRadioButton" Content="to xaml" Click="XamlRadioButton_Click"/>
+            <RadioButton x:Name="XamlRadioButton" Content="to xml" Click="XamlRadioButton_Click"/>
         </ListBox>
         
         <StackPanel x:Name="MainStackPanel" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50, 0, 50, 0" Width="700">

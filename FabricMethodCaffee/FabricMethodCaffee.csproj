@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Adapter\Adapter.csproj" />
+    <ProjectReference Include="..\ArrayListAdapter\ArrayListAdapter.csproj" />
     <ProjectReference Include="..\BuilderLibrary\BuilderLibrary.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeLibrary.csproj" />
   </ItemGroup>

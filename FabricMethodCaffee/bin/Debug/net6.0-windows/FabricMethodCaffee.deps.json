@@ -9,6 +9,7 @@
       "FabricMethodCaffee/1.0.0": {
         "dependencies": {
           "Adapter": "1.0.0",
+          "ArrayListAdapter": "1.0.0",
           "BuilderLibrary": "1.0.0",
           "PrototypeLibrary": "1.0.0"
         },
@@ -19,6 +20,11 @@
       "Adapter/1.0.0": {
         "runtime": {
           "Adapter.dll": {}
+        }
+      },
+      "ArrayListAdapter/1.0.0": {
+        "runtime": {
+          "ArrayListAdapter.dll": {}
         }
       },
       "BuilderLibrary/1.0.0": {
@@ -43,6 +49,11 @@
       "sha512": ""
     },
     "Adapter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ArrayListAdapter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

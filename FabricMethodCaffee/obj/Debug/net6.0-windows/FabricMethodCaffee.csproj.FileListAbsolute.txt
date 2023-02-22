@@ -50,3 +50,5 @@ C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\De
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\PrototypeLibrary.pdb
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\Adapter.dll
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\Adapter.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ArrayListAdapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ArrayListAdapter.pdb

@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\bin\Debug\net6.0-windows\ArrayListAdapter.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\bin\Debug\net6.0-windows\ArrayListAdapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\bin\Debug\net6.0-windows\ArrayListAdapter.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\refint\ArrayListAdapter.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ArrayListAdapter.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ArrayListAdapter\obj\Debug\net6.0-windows\ref\ArrayListAdapter.dll
