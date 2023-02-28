@@ -11,6 +11,7 @@
           "Adapter": "1.0.0",
           "ArrayListAdapter": "1.0.0",
           "BuilderLibrary": "1.0.0",
+          "FlyweightLibrary": "1.0.0",
           "PrototypeLibrary": "1.0.0"
         },
         "runtime": {
@@ -33,6 +34,11 @@
         },
         "runtime": {
           "BuilderLibrary.dll": {}
+        }
+      },
+      "FlyweightLibrary/1.0.0": {
+        "runtime": {
+          "FlyweightLibrary.dll": {}
         }
       },
       "PrototypeLibrary/1.0.0": {
@@ -59,6 +65,11 @@
       "sha512": ""
     },
     "BuilderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlyweightLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -44,6 +44,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "FlyweightLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FlyweightLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlyweightLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "PrototypeLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -75,6 +88,11 @@
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
       "msbuildProject": "../BuilderLibrary/BuilderLibrary.csproj"
     },
+    "FlyweightLibrary/1.0.0": {
+      "type": "project",
+      "path": "../FlyweightLibrary/FlyweightLibrary.csproj",
+      "msbuildProject": "../FlyweightLibrary/FlyweightLibrary.csproj"
+    },
     "PrototypeLibrary/1.0.0": {
       "type": "project",
       "path": "../Prototype/PrototypeLibrary.csproj",
@@ -86,6 +104,7 @@
       "Adapter >= 1.0.0",
       "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
+      "FlyweightLibrary >= 1.0.0",
       "PrototypeLibrary >= 1.0.0"
     ]
   },
@@ -124,6 +143,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj"

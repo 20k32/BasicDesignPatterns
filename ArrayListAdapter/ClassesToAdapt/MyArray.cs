@@ -19,7 +19,10 @@ namespace ArrayListAdapter
 
         public void SetArray(params T[] NewArray)
         {
-            array = NewArray;
+            for (int i = 0; i < ElementCount; i++)
+            {
+                array[i] = NewArray[i];
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()

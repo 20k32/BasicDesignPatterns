@@ -8,10 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Background.jpg" />
+    <None Remove="Images\BackGround.jpg" />
+    <None Remove="Images\bird11.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Adapter\Adapter.csproj" />
     <ProjectReference Include="..\ArrayListAdapter\ArrayListAdapter.csproj" />
     <ProjectReference Include="..\BuilderLibrary\BuilderLibrary.csproj" />
+    <ProjectReference Include="..\FlyweightLibrary\FlyweightLibrary.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background.jpg" />
+    <Resource Include="Images\Background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bird11.png" />
   </ItemGroup>
 
 </Project>

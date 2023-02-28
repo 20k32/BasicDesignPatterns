@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\bin\Debug\net6.0-windows\FlyweightLibrary.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\bin\Debug\net6.0-windows\FlyweightLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\bin\Debug\net6.0-windows\FlyweightLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\refint\FlyweightLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\FlyweightLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FlyweightLibrary\obj\Debug\net6.0-windows\ref\FlyweightLibrary.dll
