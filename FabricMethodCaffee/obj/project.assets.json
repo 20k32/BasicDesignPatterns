@@ -44,6 +44,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "DecoratorLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DecoratorLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DecoratorLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "FlyweightLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -88,6 +101,11 @@
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
       "msbuildProject": "../BuilderLibrary/BuilderLibrary.csproj"
     },
+    "DecoratorLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DecoratorLibrary/DecoratorLibrary.csproj",
+      "msbuildProject": "../DecoratorLibrary/DecoratorLibrary.csproj"
+    },
     "FlyweightLibrary/1.0.0": {
       "type": "project",
       "path": "../FlyweightLibrary/FlyweightLibrary.csproj",
@@ -104,6 +122,7 @@
       "Adapter >= 1.0.0",
       "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
+      "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
       "PrototypeLibrary >= 1.0.0"
     ]
@@ -143,6 +162,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\DecoratorLibrary\\DecoratorLibrary.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\DecoratorLibrary\\DecoratorLibrary.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj"

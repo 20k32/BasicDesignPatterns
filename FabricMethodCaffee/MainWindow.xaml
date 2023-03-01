@@ -12,11 +12,9 @@
         Height="1000"
         ResizeMode="NoResize">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" x:Name="BirdGridRow"/>
-        </Grid.RowDefinitions>
-        <Canvas x:Name="MainField" Grid.Row="0" Width="Auto" Height="Auto"/>
-       
-    </Grid>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox x:Name="EvoTextBox" TextWrapping="Wrap" MinHeight="300" MinWidth="600"/>
+        <Button Content="Show HumanEvolution" Click="Button_Click"/>
+
+    </StackPanel>
 </Window>

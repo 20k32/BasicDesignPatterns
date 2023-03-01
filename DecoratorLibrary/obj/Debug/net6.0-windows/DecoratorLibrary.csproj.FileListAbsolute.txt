@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\bin\Debug\net6.0-windows\DecoratorLibrary.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\bin\Debug\net6.0-windows\DecoratorLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\bin\Debug\net6.0-windows\DecoratorLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\refint\DecoratorLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\DecoratorLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\DecoratorLibrary\obj\Debug\net6.0-windows\ref\DecoratorLibrary.dll

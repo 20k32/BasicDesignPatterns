@@ -54,12 +54,12 @@ namespace FlyweightLibrary
 
         private void ReinitBirds()
         {
-            birds[0] = (Sparrow)sparrow.LightCopy();
+           /* birds[0] = (Sparrow)sparrow.LightCopy();
             birds[1] = (Duck)duck.LightCopy();
             birds[2] = (Fowl)fowl.LightCopy();
             birds[3] = (Swan)swan.LightCopy();
             birds[4] = (Sparrow)sparrow.LightCopy();
-            birds[5] = (Duck)duck.LightCopy();
+            birds[5] = (Duck)duck.LightCopy();*/
         }
 
         public double GetImageLeftRigthSpawnPoint(Image image)
@@ -92,7 +92,6 @@ namespace FlyweightLibrary
                 Canvas.SetLeft(image, lrSpawn);
                 Canvas.SetTop(image, tbSpawn);
 
-
                 Field.Children.Add(image);
 
                 DoubleAnimation doubleAnimation = null!;
@@ -106,9 +105,7 @@ namespace FlyweightLibrary
                     doubleAnimation = MyAnimation.ConfigDoubleAnimation(0, Field.Width, TimeSpan.FromSeconds(5));
                 }
                 doubleAnimation.Completed += OnCompleted;
-
                 ObjectAnimationUsingKeyFrames objAnimation = MyAnimation.ConfigKeyFrameAnimation(TimeSpan.FromSeconds(5), item.BirdFames);
-                //objAnimation.Completed += OnCompleted;
                 Storyboard storyboard = MyAnimation.ConfigStoryboard(doubleAnimation, objAnimation);
                 MyAnimation.ApplyAinmation(doubleAnimation, objAnimation, image);
                 storyboard.Begin();
@@ -117,6 +114,7 @@ namespace FlyweightLibrary
         public void OnCompleted(object sender, EventArgs e)
         {
             Field.Children.Clear();
+            GC.Collect();
             ReinitBirds();
             ApplyAnimationToCanvas();
         }

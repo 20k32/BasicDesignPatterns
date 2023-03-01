@@ -54,3 +54,5 @@ C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\De
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ArrayListAdapter.pdb
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\FlyweightLibrary.dll
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\FlyweightLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\DecoratorLibrary.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\DecoratorLibrary.pdb

@@ -8,42 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "FabricMethodCaffee/1.0.0": {
         "dependencies": {
-          "Adapter": "1.0.0",
-          "ArrayListAdapter": "1.0.0",
-          "BuilderLibrary": "1.0.0",
-          "FlyweightLibrary": "1.0.0",
-          "PrototypeLibrary": "1.0.0"
+          "DecoratorLibrary": "1.0.0",
+          "FlyweightLibrary": "1.0.0"
         },
         "runtime": {
           "FabricMethodCaffee.dll": {}
         }
       },
-      "Adapter/1.0.0": {
+      "DecoratorLibrary/1.0.0": {
         "runtime": {
-          "Adapter.dll": {}
-        }
-      },
-      "ArrayListAdapter/1.0.0": {
-        "runtime": {
-          "ArrayListAdapter.dll": {}
-        }
-      },
-      "BuilderLibrary/1.0.0": {
-        "dependencies": {
-          "PrototypeLibrary": "1.0.0"
-        },
-        "runtime": {
-          "BuilderLibrary.dll": {}
+          "DecoratorLibrary.dll": {}
         }
       },
       "FlyweightLibrary/1.0.0": {
         "runtime": {
-          "FlyweightLibrary.dll": {}
-        }
-      },
-      "PrototypeLibrary/1.0.0": {
-        "runtime": {
-          "PrototypeLibrary.dll": {}
+          "BuilderLibrary.dll": {}
         }
       }
     }
@@ -54,27 +33,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Adapter/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ArrayListAdapter/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BuilderLibrary/1.0.0": {
+    "DecoratorLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "FlyweightLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "PrototypeLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
