@@ -5,7 +5,7 @@
         public MaleMechanicDecorator(Human human) : base(human) { }
         public override string DoIntelligentWork()
         {
-            human.ExactWork = " is fixing car well";
+            human.ExactWork = " чинит двигатель автомобиля";
             return human.DoWork();
         }
     }

@@ -6,7 +6,7 @@
 
         public override string DoIntelligentWork()
         {
-            human.ExactWork = " programs the information system for the car";
+            human.ExactWork = " программирует информационную систему автомобиля";
             return human.DoWork();
         }
     }

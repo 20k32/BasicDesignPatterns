@@ -5,7 +5,7 @@
         public ProgrammerDecorator(Human human) : base(human) { }
         public override string DoIntelligentWork()
         {
-            human.ExactWork = " is programming a simle task";
+            human.ExactWork = " кодит несложную задачу";
             return human.DoWork();
         }
     }

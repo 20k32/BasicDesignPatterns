@@ -11,7 +11,8 @@ namespace FabricMethodCaffee
     
     public partial class MainWindow : Window
     {
-       
+        private int counter = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -19,8 +20,10 @@ namespace FabricMethodCaffee
 
         public void WriteInTextbox(string text)
         {
-            EvoTextBox.Text += text;
+
+            EvoTextBox.Text += (++counter).ToString() + ". " + text;
             EvoTextBox.Text += Environment.NewLine;
+            counter = counter == 6 ? 0 : counter; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -44,7 +47,83 @@ namespace FabricMethodCaffee
 
             WriteInTextbox(someHuman.DoWork());
 
-            if (randomValue == 0)
+            if (randomValue == 0) // male
+            {
+                randomValue = random.Next(0, 2);
+                switch (randomValue)
+                {
+                    case 0:
+                        {
+                            humanDecorator = new MaleHouseBuilderDecorator(someHuman);
+                        } break;
+                    case 1:
+                        {
+                            humanDecorator = new HouseholdDecorator(someHuman);
+                            
+                        } break;
+                }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+            }
+            else // female
+            {
+                randomValue = random.Next(0, 2);
+                switch (randomValue)
+                {
+                    case 0:
+                        {
+                            humanDecorator = new FemaleHousekeepingDecorator(someHuman);
+                        }
+                        break;
+                    case 1:
+                        {
+                            humanDecorator = new HouseholdDecorator(someHuman);
+                        }
+                        break;
+                }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+            }
+            if (tempValue == 0)
+            {
+                humanDecorator = new MaleDeveloperDecorator(someHuman);
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+                randomValue = random.Next(0, 2);
+                switch (randomValue)
+                {
+                    case 0:
+                        {
+                            humanDecorator = new MaleEngineerDecorator(someHuman);
+                        }
+                        break;
+                    case 1:
+                        {
+                            humanDecorator = new AstronautDecorator(someHuman);
+                        }
+                        break;
+                }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+
+            }
+            else
+            {
+                humanDecorator = new FemalePrinterDecorator(someHuman);
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+                randomValue = random.Next(0, 2);
+                switch (randomValue)
+                {
+                    case 0:
+                        {
+                            humanDecorator = new FemaleCalculatorDecorator(someHuman);
+                        }
+                        break;
+                    case 1:
+                        {
+                            humanDecorator = new AstronautDecorator(someHuman);
+                        }
+                        break;
+                }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+            }
+            if (tempValue == 0)
             {
                 randomValue = random.Next(0, 2);
                 switch (randomValue)
@@ -52,14 +131,16 @@ namespace FabricMethodCaffee
                     case 0:
                         {
                             humanDecorator = new MaleMechanicDecorator(someHuman);
-                            WriteInTextbox(humanDecorator.DoIntelligentWork());
-                        } break;
+                        }
+                        break;
                     case 1:
                         {
                             humanDecorator = new ProgrammerDecorator(someHuman);
-                            WriteInTextbox(humanDecorator.DoIntelligentWork());
-                        } break;
+                        }
+                        break;
                 }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
+
             }
             else
             {
@@ -69,27 +150,25 @@ namespace FabricMethodCaffee
                     case 0:
                         {
                             humanDecorator = new FemaleTeacherDecorator(someHuman);
-                            WriteInTextbox(humanDecorator.DoIntelligentWork());
                         }
                         break;
                     case 1:
                         {
                             humanDecorator = new ProgrammerDecorator(someHuman);
-                            WriteInTextbox(humanDecorator.DoIntelligentWork());
                         }
                         break;
                 }
+                WriteInTextbox(humanDecorator.DoIntelligentWork());
             }
             if (tempValue == 0)
             {
                 humanDecorator = new MaleAutoProgrammer(someHuman);
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
             }
             else
             {
                 humanDecorator = new FemaleITTeacher(someHuman);
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
             }
+            WriteInTextbox(humanDecorator.DoIntelligentWork());
         }
     }   
 }

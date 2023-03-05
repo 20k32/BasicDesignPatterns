@@ -5,7 +5,7 @@
         public FemaleTeacherDecorator(Human human) : base(human) { }
         public override string DoIntelligentWork()
         {
-            human.ExactWork = " teaches other humans";
+            human.ExactWork = " учит других людей";
             return human.DoWork();
         }
     }

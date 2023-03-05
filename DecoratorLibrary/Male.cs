@@ -6,12 +6,12 @@ namespace DecoratorLibrary
     {
         public Male()
         {
-            ExactWork = " is killing mamonth";
+            ExactWork = " пытается убить мамонта";
         }
 
         public override string DoWork()
         {
-            return string.Concat(nameof(Male), ExactWork);
+            return string.Concat("Мужчина", ExactWork);
         }
     }
 }

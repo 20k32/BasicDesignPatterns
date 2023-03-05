@@ -4,11 +4,11 @@
     {
         public Female()
         {
-            ExactWork = " is cooking in the cave";
+            ExactWork = " готовит еду в пещере";
         }
         public override string DoWork()
         {
-            return string.Concat(nameof(Female), ExactWork);
+            return string.Concat("Женщина", ExactWork);
         }
     }
 }
