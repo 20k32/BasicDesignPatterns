@@ -11,6 +11,7 @@
           "Adapter": "1.0.0",
           "ArrayListAdapter": "1.0.0",
           "BuilderLibrary": "1.0.0",
+          "CompositeLibrary": "1.0.0",
           "DecoratorLibrary": "1.0.0",
           "FlyweightLibrary": "1.0.0",
           "PrototypeLibrary": "1.0.0"
@@ -35,6 +36,11 @@
         },
         "runtime": {
           "BuilderLibrary.dll": {}
+        }
+      },
+      "CompositeLibrary/1.0.0": {
+        "runtime": {
+          "CompositeLibrary.dll": {}
         }
       },
       "DecoratorLibrary/1.0.0": {
@@ -71,6 +77,11 @@
       "sha512": ""
     },
     "BuilderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompositeLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

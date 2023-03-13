@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListAdapter", "ArrayLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyweightLibrary", "FlyweightLibrary\FlyweightLibrary.csproj", "{CF57E0ED-96F8-4CB8-B41C-6F65F3570B67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorLibrary", "DecoratorLibrary\DecoratorLibrary.csproj", "{A2352326-D59C-4DD3-92E0-235B0B8ABD14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorLibrary", "DecoratorLibrary\DecoratorLibrary.csproj", "{A2352326-D59C-4DD3-92E0-235B0B8ABD14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeLibrary", "CompositeLibrary\CompositeLibrary.csproj", "{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{A2352326-D59C-4DD3-92E0-235B0B8ABD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2352326-D59C-4DD3-92E0-235B0B8ABD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2352326-D59C-4DD3-92E0-235B0B8ABD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using CompositeLibrary;
 using DecoratorLibrary;
 
 namespace FabricMethodCaffee
@@ -8,167 +9,104 @@ namespace FabricMethodCaffee
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
-    
+
     public partial class MainWindow : Window
     {
-        private int counter = 0;
+        SubmarineComponent rootComponent = null!;
+        public const int LIGHT_COMPONENT_WEIGHT = 10;
+        public const int MIDDLE_COMPONENT_WEIGHT = 20;
+        public const int HEAVY_COMPONENT_WEIGHT = 40;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        public void WriteInTextbox(string text)
+        private void AddSternButton_Click(object sender, RoutedEventArgs e)
         {
-
-            EvoTextBox.Text += (++counter).ToString() + ". " + text;
-            EvoTextBox.Text += Environment.NewLine;
-            counter = counter == 6 ? 0 : counter; 
+            switch (SternComboBox.SelectedIndex)
+            {
+                case 0:
+                    rootComponent = new SubmarineSkeletonComponent("Ligth Stern", LIGHT_COMPONENT_WEIGHT);
+                    break;
+                case 1:
+                    rootComponent = new SubmarineSkeletonComponent("Middle Stern", MIDDLE_COMPONENT_WEIGHT);
+                    break;
+                case 2:
+                    rootComponent = new SubmarineSkeletonComponent("Heavy Stern", HEAVY_COMPONENT_WEIGHT);
+                    break;
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddDetailButton_Click(object sender, RoutedEventArgs e)
         {
-            EvoTextBox.Clear();
-
-            Human someHuman = null!;
-            AbstractEvolutionDecorator humanDecorator = null!;
-
-            Random random = new Random();
-            int randomValue = random.Next(0, 2);
-            int tempValue = randomValue;
-            if (randomValue == 0)
+            if (rootComponent != null)
             {
-                someHuman = new Male();
-            }
-            else
-            {
-                someHuman = new Female();
-            }
-
-            WriteInTextbox(someHuman.DoWork());
-
-            if (randomValue == 0) // male
-            {
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
+                switch (EngineComboBox.SelectedIndex)
                 {
                     case 0:
-                        {
-                            humanDecorator = new MaleHouseBuilderDecorator(someHuman);
-                        } break;
-                    case 1:
-                        {
-                            humanDecorator = new HouseholdDecorator(someHuman);
-                            
-                        } break;
-                }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
-            }
-            else // female
-            {
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
-                {
-                    case 0:
-                        {
-                            humanDecorator = new FemaleHousekeepingDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Ligth Engine", LIGHT_COMPONENT_WEIGHT));
                         break;
                     case 1:
-                        {
-                            humanDecorator = new HouseholdDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Middle Engine", MIDDLE_COMPONENT_WEIGHT));
+                        break;
+                    case 2:
+                        rootComponent.Add(new SubmarineSkeletonComponent("Heavy Engine", HEAVY_COMPONENT_WEIGHT));
                         break;
                 }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
-            }
-            if (tempValue == 0)
-            {
-                humanDecorator = new MaleDeveloperDecorator(someHuman);
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
-                {
-                    case 0:
-                        {
-                            humanDecorator = new MaleEngineerDecorator(someHuman);
-                        }
-                        break;
-                    case 1:
-                        {
-                            humanDecorator = new AstronautDecorator(someHuman);
-                        }
-                        break;
-                }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
 
-            }
-            else
-            {
-                humanDecorator = new FemalePrinterDecorator(someHuman);
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
+                switch (MotorComboBox.SelectedIndex)
                 {
                     case 0:
-                        {
-                            humanDecorator = new FemaleCalculatorDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Ligth Motor", LIGHT_COMPONENT_WEIGHT));
                         break;
                     case 1:
-                        {
-                            humanDecorator = new AstronautDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Middle Motor", MIDDLE_COMPONENT_WEIGHT));
+                        break;
+                    case 2:
+                        rootComponent.Add(new SubmarineSkeletonComponent("Heavy Motor", HEAVY_COMPONENT_WEIGHT));
                         break;
                 }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
-            }
-            if (tempValue == 0)
-            {
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
-                {
-                    case 0:
-                        {
-                            humanDecorator = new MaleMechanicDecorator(someHuman);
-                        }
-                        break;
-                    case 1:
-                        {
-                            humanDecorator = new ProgrammerDecorator(someHuman);
-                        }
-                        break;
-                }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
 
-            }
-            else
-            {
-                randomValue = random.Next(0, 2);
-                switch (randomValue)
+                switch (NavigationSysComboBox.SelectedIndex)
                 {
                     case 0:
-                        {
-                            humanDecorator = new FemaleTeacherDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Ligth Navigation System", LIGHT_COMPONENT_WEIGHT));
                         break;
                     case 1:
-                        {
-                            humanDecorator = new ProgrammerDecorator(someHuman);
-                        }
+                        rootComponent.Add(new SubmarineSkeletonComponent("Middle Navigation System", MIDDLE_COMPONENT_WEIGHT));
+                        break;
+                    case 2:
+                        rootComponent.Add(new SubmarineSkeletonComponent("Heavy Navigation System", HEAVY_COMPONENT_WEIGHT));
                         break;
                 }
-                WriteInTextbox(humanDecorator.DoIntelligentWork());
+
+                if (AverageCheckBox.IsChecked == true)
+                {
+                    rootComponent.Add(new SubmarineSternComponent("Average Rocket System", LIGHT_COMPONENT_WEIGHT));
+                }
+                if (AdvancedCheckBox.IsChecked == true)
+                {
+                    rootComponent.Add(new SubmarineSternComponent("Advanced Rocket System", MIDDLE_COMPONENT_WEIGHT));
+                }
+                if (ExtendedCheckBox.IsChecked == true)
+                {
+                    rootComponent.Add(new SubmarineSternComponent("Extended Rocket System", HEAVY_COMPONENT_WEIGHT));
+                }
             }
-            if (tempValue == 0)
-            {
-                humanDecorator = new MaleAutoProgrammer(someHuman);
-            }
-            else
-            {
-                humanDecorator = new FemaleITTeacher(someHuman);
-            }
-            WriteInTextbox(humanDecorator.DoIntelligentWork());
         }
-    }   
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (rootComponent != null)
+            {
+                foreach (SubmarineComponent item in rootComponent.GetChildren())
+                {
+                    SubmarineTextBox.Text += string.Concat(item.Name, " = ", item.Weight);
+                    SubmarineTextBox.Text += Environment.NewLine;
+                }
+            }
+
+        }
+    }
 }

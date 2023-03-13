@@ -44,6 +44,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "CompositeLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CompositeLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompositeLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "DecoratorLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -101,6 +114,11 @@
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
       "msbuildProject": "../BuilderLibrary/BuilderLibrary.csproj"
     },
+    "CompositeLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CompositeLibrary/CompositeLibrary.csproj",
+      "msbuildProject": "../CompositeLibrary/CompositeLibrary.csproj"
+    },
     "DecoratorLibrary/1.0.0": {
       "type": "project",
       "path": "../DecoratorLibrary/DecoratorLibrary.csproj",
@@ -122,6 +140,7 @@
       "Adapter >= 1.0.0",
       "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
+      "CompositeLibrary >= 1.0.0",
       "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
       "PrototypeLibrary >= 1.0.0"
@@ -162,6 +181,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\DecoratorLibrary\\DecoratorLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\DecoratorLibrary\\DecoratorLibrary.csproj"
