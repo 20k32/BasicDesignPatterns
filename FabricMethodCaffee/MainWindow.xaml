@@ -38,13 +38,7 @@
                 <ComboBoxItem Content="Heavy Motor"/>
             </ComboBox>
 
-            <ComboBox x:Name="NavigationSysComboBox" SelectedIndex="0" HorizontalContentAlignment="Center">
-                <ComboBoxItem Content="Light Navigation System"/>
-                <ComboBoxItem Content="Middle Navigation System"/>
-                <ComboBoxItem Content="Heavy Navigation System"/>
-            </ComboBox>
-
-            <ListBox x:Name="RocketSysListBox" Margin="0, 10, 0, 10">
+            <ListBox x:Name="RocketSysListBox" Margin="0, 0, 0, 10">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel IsItemsHost="True" HorizontalAlignment="Center"/>
@@ -54,6 +48,29 @@
                 <CheckBox x:Name="AdvancedCheckBox" Content="Advanced Rocket System"/>
                 <CheckBox x:Name="ExtendedCheckBox" Content="Extended Rocket System"/>
             </ListBox>
+
+            <ComboBox x:Name="NavigationSysComboBox" SelectedIndex="0" HorizontalContentAlignment="Center" Margin="0, 0, 0, 10">
+                <ComboBoxItem Content="Light Navigation System"/>
+                <ComboBoxItem Content="Middle Navigation System"/>
+                <ComboBoxItem Content="Heavy Navigation System"/>
+            </ComboBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0, 0, 10, 0">
+                    <CheckBox x:Name="RearPropellerCheckBox" Content="Rear Propeller"/>
+                    <CheckBox x:Name="PowerPlantCheckBox" Content="Power Plant" Margin="0, 10, 0, 10"/>
+                    <CheckBox x:Name="CompressedAirBottleCheckBox" Content="Compressed air bottle"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <CheckBox x:Name="AdditionalCrewCheckBox" Content="Additional Crew"/>
+                    <CheckBox x:Name="AdditionalRepairmentCheckBox" Content="Additional repairmen" Margin="0, 10, 0, 10"/>
+                    <CheckBox x:Name="AdditionalCommanderCheckBox" Content="Additional commander"/>
+                </StackPanel>
+
+            </StackPanel>
+
             <Button x:Name="AddDetailButton" Content="Add Details" Click="AddDetailButton_Click"/>
             <Button x:Name="PrintButton" Content="Show Submarine" Margin="0, 10, 0, 0" Click="PrintButton_Click"/>
         </StackPanel>
