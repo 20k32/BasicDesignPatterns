@@ -14,7 +14,8 @@
           "CompositeLibrary": "1.0.0",
           "DecoratorLibrary": "1.0.0",
           "FlyweightLibrary": "1.0.0",
-          "PrototypeLibrary": "1.0.0"
+          "PrototypeLibrary": "1.0.0",
+          "ProxyCalculator": "1.0.0"
         },
         "runtime": {
           "FabricMethodCaffee.dll": {}
@@ -57,6 +58,11 @@
         "runtime": {
           "PrototypeLibrary.dll": {}
         }
+      },
+      "ProxyCalculator/1.0.0": {
+        "runtime": {
+          "ProxyCalculator.dll": {}
+        }
       }
     }
   },
@@ -97,6 +103,11 @@
       "sha512": ""
     },
     "PrototypeLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProxyCalculator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

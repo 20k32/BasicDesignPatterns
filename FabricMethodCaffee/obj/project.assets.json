@@ -95,6 +95,19 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "ProxyCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProxyCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProxyCalculator.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -133,6 +146,11 @@
       "type": "project",
       "path": "../Prototype/PrototypeLibrary.csproj",
       "msbuildProject": "../Prototype/PrototypeLibrary.csproj"
+    },
+    "ProxyCalculator/1.0.0": {
+      "type": "project",
+      "path": "../ProxyCalculator/ProxyCalculator.csproj",
+      "msbuildProject": "../ProxyCalculator/ProxyCalculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -143,7 +161,8 @@
       "CompositeLibrary >= 1.0.0",
       "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
-      "PrototypeLibrary >= 1.0.0"
+      "PrototypeLibrary >= 1.0.0",
+      "ProxyCalculator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -193,6 +212,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ProxyCalculator\\ProxyCalculator.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ProxyCalculator\\ProxyCalculator.csproj"
             }
           }
         }

@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\bin\Debug\net6.0-windows\ProxyCalculator.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\bin\Debug\net6.0-windows\ProxyCalculator.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\bin\Debug\net6.0-windows\ProxyCalculator.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\refint\ProxyCalculator.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ProxyCalculator.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ProxyCalculator\obj\Debug\net6.0-windows\ref\ProxyCalculator.dll

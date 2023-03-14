@@ -7,7 +7,7 @@ namespace CompositeLibrary
     // root
     public class SubmarineSkeletonComponent : SubmarineComponent
     {
-        public List<SubmarineComponent> SubmarineComponents = null!;
+        private List<SubmarineComponent> SubmarineComponents = null!;
 
         private bool Validate(SubmarineComponent component) => SubmarineComponents.Contains(component);
 

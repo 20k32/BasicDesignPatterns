@@ -58,3 +58,5 @@ C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\De
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\DecoratorLibrary.pdb
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\CompositeLibrary.dll
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\CompositeLibrary.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ProxyCalculator.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ProxyCalculator.pdb
