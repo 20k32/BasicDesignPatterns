@@ -1,5 +1,7 @@
 ﻿using System.Windows.Documents;
 using System.Collections.Generic;
+using System;
+
 namespace CompositeLibrary
 {
     // root
@@ -33,6 +35,24 @@ namespace CompositeLibrary
             {
                 SubmarineComponents.Remove(component);
             }
+        }
+
+        public override int GetWeight()
+        {
+            int result = Weight;
+
+            foreach (SubmarineComponent item in GetChildren())
+            {
+                result += item.Weight;
+                if (item is SubmarineSkeletonComponent subroot)
+                {
+                    foreach (SubmarineComponent subItem in subroot.GetChildren())
+                    {
+                        result += subItem.Weight;
+                    }
+                }
+            }
+            return result;
         }
     }
 }

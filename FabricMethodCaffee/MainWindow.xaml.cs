@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using CompositeLibrary;
 using DecoratorLibrary;
 
@@ -15,12 +18,20 @@ namespace FabricMethodCaffee
 
     public partial class MainWindow : Window
     {
-        SubmarineComponent rootComponent = null!;
-        SubmarineComponent subrootDeckComponent = null!;
+        private SubmarineComponent rootComponent = null!;
+        private SubmarineComponent subrootDeckComponent = null!;
+        private static BitmapImage lightSubmarineImage = new BitmapImage(new Uri("Images/submarine1.jpg", UriKind.Relative));
+        private static BitmapImage mediumSubmarineImage = new BitmapImage(new Uri("Images/submarine2.jfif", UriKind.Relative));
+        private static BitmapImage heavySubmarineImage = new BitmapImage(new Uri("Images/submarine3.jpg", UriKind.Relative));
+        private static BitmapImage heavyHeavySubmarineImage = new BitmapImage(new Uri("Images/submarine4.png", UriKind.Relative));
+
 
         public const int LIGHT_COMPONENT_WEIGHT = 10;
         public const int MIDDLE_COMPONENT_WEIGHT = 20;
         public const int HEAVY_COMPONENT_WEIGHT = 40;
+
+
+
 
         public MainWindow()
         {
@@ -69,7 +80,7 @@ namespace FabricMethodCaffee
                 }
             }
 
-           
+
 
             if (rootComponent != null)
             {
@@ -114,28 +125,28 @@ namespace FabricMethodCaffee
 
                 if (RearPropellerCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Rear Propeller", MIDDLE_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Rear Propeller", MIDDLE_COMPONENT_WEIGHT));
                 }
                 if (PowerPlantCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Power Plant", MIDDLE_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Power Plant", MIDDLE_COMPONENT_WEIGHT));
                 }
                 if (CompressedAirBottleCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Compressed air bottle", MIDDLE_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Compressed air bottle", MIDDLE_COMPONENT_WEIGHT));
                 }
 
                 if (AdditionalCrewCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Additional Crew", MIDDLE_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Additional Crew", MIDDLE_COMPONENT_WEIGHT));
                 }
                 if (AdditionalRepairmentCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Additional Repairmen", LIGHT_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Additional Repairmen", LIGHT_COMPONENT_WEIGHT));
                 }
                 if (AdditionalCommanderCheckBox.IsChecked == true)
                 {
-                    subrootDeckComponent.Add(new SubmarineSkeletonComponent("Additional Commander", LIGHT_COMPONENT_WEIGHT));
+                    subrootDeckComponent.Add(new SubmarineSternComponent("Additional Commander", LIGHT_COMPONENT_WEIGHT));
                 }
 
                 SubmarineComponent[] subrootComponents = subrootDeckComponent.GetChildren().ToArray();
@@ -159,6 +170,14 @@ namespace FabricMethodCaffee
             }
         }
 
+        private BitmapImage GetImageBySubmarineWeight(int weight) => weight switch
+        {
+            <= 100 => lightSubmarineImage,
+            <= 200 => mediumSubmarineImage,
+            <= 300 => heavySubmarineImage,
+            _ => heavyHeavySubmarineImage
+        };
+
         private void PrintButton_Click(object sender, RoutedEventArgs e)
         {
             if (rootComponent != null)
@@ -178,8 +197,14 @@ namespace FabricMethodCaffee
                         }
                     }
                 }
-            }
 
+                int weight = rootComponent.GetWeight();
+
+                SubmarineTextBox.Text += Environment.NewLine;
+                SubmarineTextBox.Text += string.Concat("SubmarineWeight: ", weight);
+
+                SubmarineImage.Source = GetImageBySubmarineWeight(weight);
+            }
         }
     }
 }

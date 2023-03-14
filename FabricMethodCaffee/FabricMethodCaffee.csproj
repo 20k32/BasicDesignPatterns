@@ -11,6 +11,11 @@
     <None Remove="Background.jpg" />
     <None Remove="Images\BackGround.jpg" />
     <None Remove="Images\bird11.png" />
+    <None Remove="Images\submarine1.jpg" />
+    <None Remove="Images\submarine2.jfif" />
+    <None Remove="Images\submarine3.jpg" />
+    <None Remove="Images\submarine4.png" />
+    <None Remove="submarine1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +34,19 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\bird11.png" />
+    <Resource Include="Images\submarine1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\submarine2.jfif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\submarine3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\submarine4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="submarine1.jpg" />
   </ItemGroup>
 
 </Project>

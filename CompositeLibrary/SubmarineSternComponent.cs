@@ -24,6 +24,11 @@ namespace CompositeLibrary
             throw new System.NotImplementedException();
         }
 
+        public override int GetWeight()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override void Remove(SubmarineComponent component)
         {
             throw new System.NotImplementedException();

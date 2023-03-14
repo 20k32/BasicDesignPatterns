@@ -16,5 +16,7 @@ namespace CompositeLibrary
         public abstract void Add(SubmarineComponent component);
         public abstract void Remove(SubmarineComponent component);
         public abstract IEnumerable<SubmarineComponent> GetChildren();
+        public abstract int GetWeight();
+
     }
 }
