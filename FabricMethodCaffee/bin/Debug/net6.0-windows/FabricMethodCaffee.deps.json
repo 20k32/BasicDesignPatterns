@@ -11,6 +11,7 @@
           "Adapter": "1.0.0",
           "ArrayListAdapter": "1.0.0",
           "BuilderLibrary": "1.0.0",
+          "ChainOfResponsibility": "1.0.0",
           "CompositeLibrary": "1.0.0",
           "DecoratorLibrary": "1.0.0",
           "FlyweightLibrary": "1.0.0",
@@ -37,6 +38,11 @@
         },
         "runtime": {
           "BuilderLibrary.dll": {}
+        }
+      },
+      "ChainOfResponsibility/1.0.0": {
+        "runtime": {
+          "ChainOfResponsibility.dll": {}
         }
       },
       "CompositeLibrary/1.0.0": {
@@ -83,6 +89,11 @@
       "sha512": ""
     },
     "BuilderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChainOfResponsibility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

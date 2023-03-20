@@ -1,0 +1,12 @@
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\bin\Debug\net6.0-windows\ChainOfResponsibility.deps.json
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\bin\Debug\net6.0-windows\ChainOfResponsibility.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\bin\Debug\net6.0-windows\ChainOfResponsibility.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.AssemblyInfoInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.AssemblyInfo.cs
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\refint\ChainOfResponsibility.dll
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ChainOfResponsibility.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\ChainOfResponsibility\obj\Debug\net6.0-windows\ref\ChainOfResponsibility.dll

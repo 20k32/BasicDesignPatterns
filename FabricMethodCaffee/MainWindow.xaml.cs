@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Windows;
+using ChainOfResponsibility;
+using System.Collections.Generic;
 using System.Windows.Controls;
-using ProxyCalculator;
+using System.Linq;
+using System.Security.Policy;
 
 namespace FabricMethodCaffee
 {
@@ -10,85 +13,152 @@ namespace FabricMethodCaffee
     /// </summary>
     /// 
 
+    public static class ListExtensions
+    {
+        public static string StringList<T>(this List<T> list)
+        {
+            string result = string.Empty;
+            foreach (T item in list)
+            {
+                result += string.Concat(Environment.NewLine, item!.ToString());
+            }
+            return result;
+        }
+
+        public static void MakeDiscount<T>(this List<T> list, DiscountHandler handler) where T : AbstractProduct
+        {
+            foreach (T item in list)
+            {
+                handler.HanldeRequest(item);
+            }
+        }
+
+    }
+
     public partial class MainWindow : Window
     {
-        private string? FirstValue = null;
-        private string? SecondValue = null;
+        List<FoodProduct> foodProducts;
+        List<ChemicalIndustryProduct> chemicalProducts;
+        List<DecorativeItemProduct> decorativeProducts;
 
-        private Calculator calculator = null!;
-        private ProxyCalculatorClass proxyCalculator = null!;
+        DiscountHandler foodProductsDiscount;
+        DiscountHandler chemicalProductDiscount;
+        DiscountHandler decorativeItemDiscount;
+
+        Random random = new Random();
 
         public MainWindow()
         {
-            calculator = new Calculator();
-            proxyCalculator = new ProxyCalculatorClass(calculator);
-
             InitializeComponent();
-        }
+            foodProducts = new List<FoodProduct>();
+            chemicalProducts = new List<ChemicalIndustryProduct>();
+            decorativeProducts = new List<DecorativeItemProduct>();
 
-        private void EraseButton_Click(object sender, RoutedEventArgs e)
-        {
-            OperationTextBox.Clear();
-            FirstValue = null!;
-            SecondValue = null!;
+            foodProductsDiscount = new FoodProductDiscountHandler();
+            chemicalProductDiscount = new ChemicalIndustryProductDiscountHandler();
+            decorativeItemDiscount = new DecorativeItemDiscountHandler();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            OperationTextBox.Text += ((Button)sender).Content.ToString();
+            PriceTextBox.Text = string.Empty;
+            if (foodProducts.Count > 0)
+            {
+                PriceTextBox.Text += foodProducts.StringList();
+                
+            }
+            if (chemicalProducts.Count > 0)
+            {
+                PriceTextBox.Text += Environment.NewLine;
+                PriceTextBox.Text += chemicalProducts.StringList();
+            }
+            if (decorativeProducts.Count > 0)
+            {
+                PriceTextBox.Text += Environment.NewLine;
+                PriceTextBox.Text += decorativeProducts.StringList();
+                
+            }
+
+            //chain of responsibility
+            foodProducts.MakeDiscount(foodProductsDiscount);
+            foodProducts.MakeDiscount(chemicalProductDiscount);
+            foodProducts.MakeDiscount(decorativeItemDiscount);
+
+            chemicalProducts.MakeDiscount(foodProductsDiscount);
+            chemicalProducts.MakeDiscount(chemicalProductDiscount);
+            chemicalProducts.MakeDiscount(decorativeItemDiscount);
+
+            decorativeProducts.MakeDiscount(foodProductsDiscount);
+            decorativeProducts.MakeDiscount(chemicalProductDiscount);
+            decorativeProducts.MakeDiscount(decorativeItemDiscount);
+
+            //
+            PriceTextBox.Text += Environment.NewLine;
+            PriceTextBox.Text += Environment.NewLine;
+            PriceTextBox.Text += "~~~After Discount~~~";
+            PriceTextBox.Text += Environment.NewLine;
+            if (foodProducts.Count > 0)
+            {
+                PriceTextBox.Text += foodProducts.StringList();
+            }
+            if (chemicalProducts.Count > 0)
+            {
+                PriceTextBox.Text += Environment.NewLine;
+                PriceTextBox.Text += chemicalProducts.StringList();
+            }
+            if (decorativeProducts.Count > 0)
+            {
+                PriceTextBox.Text += Environment.NewLine;
+                PriceTextBox.Text += decorativeProducts.StringList();
+            }
+
+            foodProducts.Clear();
+            chemicalProducts.Clear();
+            decorativeProducts.Clear();
         }
 
-        private void SetValues()
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
         {
-            if (FirstValue == null)
+            CheckBox currentCheckBox = (CheckBox)sender;
+            FoodProduct foodProduct = new FoodProduct(currentCheckBox.Content.ToString()!, "average food product", random.Next(10, 101));
+            if (currentCheckBox.IsChecked == true)
             {
-                FirstValue = OperationTextBox.Text;
+                foodProducts.Add(foodProduct);
             }
             else
             {
-                SecondValue = OperationTextBox.Text;
+                FoodProduct productToDelete = foodProducts.Where(x => x.Name.Equals(foodProduct.Name)).FirstOrDefault()!;
+                foodProducts.Remove(productToDelete);
             }
-            OperationTextBox.Clear();
         }
 
-        private void AdditionButton_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_Click_1(object sender, RoutedEventArgs e)
         {
-            SetValues();
-            proxyCalculator.Operation = proxyCalculator.Sum;
-        }
-
-        private void SubtractionButton_Click(object sender, RoutedEventArgs e)
-        {
-            SetValues();
-            proxyCalculator.Operation = proxyCalculator.Subtraction;
-        }
-
-        private void MultiplicationButton_Click(object sender, RoutedEventArgs e)
-        {
-            SetValues();
-            proxyCalculator.Operation = proxyCalculator.Multiplication;
-        }
-
-        private void DivisionButton_Click(object sender, RoutedEventArgs e)
-        {
-            SetValues();
-            proxyCalculator.Operation = proxyCalculator.Division;
-        }
-
-        private void EqualsButton_Click(object sender, RoutedEventArgs e)
-        {
-            SetValues();
-            OperationTextBox.Text += proxyCalculator.Calculate(FirstValue!, SecondValue!);
-            FirstValue = null!;
-            SecondValue = null!;
-        }
-
-        private void DeleteLastCharButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (OperationTextBox.Text.Length > 0)
+            CheckBox currentCheckBox = (CheckBox)sender;
+            ChemicalIndustryProduct chemicalProduct = new ChemicalIndustryProduct(currentCheckBox.Content.ToString()!, "average chemical industry product", random.Next(20, 201));
+            if (currentCheckBox.IsChecked == true)
             {
-                string newTextFromTextBox = OperationTextBox.Text.AsSpan(0, OperationTextBox.Text.Length - 1).ToString();
-                OperationTextBox.Text = newTextFromTextBox;
+                chemicalProducts.Add(chemicalProduct);
+            }
+            else
+            {
+                ChemicalIndustryProduct productToDelete = chemicalProducts.Where(x => x.Name.Equals(chemicalProduct.Name)).FirstOrDefault()!;
+                chemicalProducts.Remove(productToDelete);
+            }
+        }
+
+        private void CheckBox_Click_2(object sender, RoutedEventArgs e)
+        {
+            CheckBox currentCheckBox = (CheckBox)sender;
+            DecorativeItemProduct decorativeProduct = new DecorativeItemProduct(currentCheckBox.Content.ToString()!, "average decorative item product", random.Next(30, 301));
+            if (currentCheckBox.IsChecked == true)
+            {
+                decorativeProducts.Add(decorativeProduct);
+            }
+            else
+            {
+                DecorativeItemProduct productToDelete = decorativeProducts.Where(x => x.Name.Equals(decorativeProduct.Name)).FirstOrDefault()!;
+                decorativeProducts.Remove(productToDelete);
             }
         }
     }

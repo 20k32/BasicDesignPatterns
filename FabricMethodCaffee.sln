@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorLibrary", "Decorat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeLibrary", "CompositeLibrary\CompositeLibrary.csproj", "{3A391ADD-AD89-4C8A-896B-B8C09DCD048B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyCalculator", "ProxyCalculator\ProxyCalculator.csproj", "{C0EC0D69-33EF-46BD-AA0D-5B4E29F1A035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyCalculator", "ProxyCalculator\ProxyCalculator.csproj", "{C0EC0D69-33EF-46BD-AA0D-5B4E29F1A035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{C9EAEEF2-5500-400B-B3CA-69E723C1B1B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{C0EC0D69-33EF-46BD-AA0D-5B4E29F1A035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0EC0D69-33EF-46BD-AA0D-5B4E29F1A035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0EC0D69-33EF-46BD-AA0D-5B4E29F1A035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EAEEF2-5500-400B-B3CA-69E723C1B1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EAEEF2-5500-400B-B3CA-69E723C1B1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EAEEF2-5500-400B-B3CA-69E723C1B1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EAEEF2-5500-400B-B3CA-69E723C1B1B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

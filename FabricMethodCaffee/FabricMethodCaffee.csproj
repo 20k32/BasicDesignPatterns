@@ -22,6 +22,7 @@
     <ProjectReference Include="..\Adapter\Adapter.csproj" />
     <ProjectReference Include="..\ArrayListAdapter\ArrayListAdapter.csproj" />
     <ProjectReference Include="..\BuilderLibrary\BuilderLibrary.csproj" />
+    <ProjectReference Include="..\ChainOfResponsibility\ChainOfResponsibility.csproj" />
     <ProjectReference Include="..\CompositeLibrary\CompositeLibrary.csproj" />
     <ProjectReference Include="..\DecoratorLibrary\DecoratorLibrary.csproj" />
     <ProjectReference Include="..\FlyweightLibrary\FlyweightLibrary.csproj" />

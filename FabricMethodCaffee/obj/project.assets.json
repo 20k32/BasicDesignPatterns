@@ -44,6 +44,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "ChainOfResponsibility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ChainOfResponsibility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChainOfResponsibility.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "CompositeLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -127,6 +140,11 @@
       "path": "../BuilderLibrary/BuilderLibrary.csproj",
       "msbuildProject": "../BuilderLibrary/BuilderLibrary.csproj"
     },
+    "ChainOfResponsibility/1.0.0": {
+      "type": "project",
+      "path": "../ChainOfResponsibility/ChainOfResponsibility.csproj",
+      "msbuildProject": "../ChainOfResponsibility/ChainOfResponsibility.csproj"
+    },
     "CompositeLibrary/1.0.0": {
       "type": "project",
       "path": "../CompositeLibrary/CompositeLibrary.csproj",
@@ -158,6 +176,7 @@
       "Adapter >= 1.0.0",
       "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
+      "ChainOfResponsibility >= 1.0.0",
       "CompositeLibrary >= 1.0.0",
       "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
@@ -200,6 +219,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\BuilderLibrary\\BuilderLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility\\ChainOfResponsibility.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility\\ChainOfResponsibility.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj"
