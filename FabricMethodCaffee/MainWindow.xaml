@@ -15,19 +15,19 @@
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" Height="500" Margin="0, 0, 10, 0">
-                <ListBox Height="150">
+                <ListBox Height="130">
                     <CheckBox Content="Hamburger" Click="CheckBox_Click"/>
                     <CheckBox Content="Pizza" Click="CheckBox_Click"/>
                     <CheckBox Content="Cola" Click="CheckBox_Click"/>
                     <CheckBox Content="Yogurt" Click="CheckBox_Click"/>
                 </ListBox>
-                <ListBox Height="150" Margin="0, 10, 0, 10">
+                <ListBox Height="130" Margin="0, 10, 0, 10">
                     <CheckBox Content="Hair Dye" Click="CheckBox_Click_1"/>
                     <CheckBox Content="Nail Polish" Click="CheckBox_Click_1"/>
                     <CheckBox Content="Shampoo" Click="CheckBox_Click_1"/>
                     <CheckBox Content="Soap" Click="CheckBox_Click_1"/>
                 </ListBox>
-                <ListBox Height="150">
+                <ListBox Height="130">
                     <CheckBox Content="Elephant figure" Click="CheckBox_Click_2"/>
                     <CheckBox Content="Brown sofa" Click="CheckBox_Click_2"/>
                     <CheckBox Content="Flowers" Click="CheckBox_Click_2"/>
@@ -35,9 +35,11 @@
                 </ListBox>
             </StackPanel>
             
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                <TextBox x:Name="PriceTextBox" Height="414" Width="700"/>
+            <StackPanel Orientation="Vertical" Height="500">
+                <TextBox x:Name="PriceTextBox" Height="370" Width="700" TextWrapping="Wrap"/>
                 <Button Content="Show Price" Margin="0, 10, 0, 0" Click="Button_Click"/>
+                <TextBox x:Name="SearchTextBox" Height="40" Margin="0, 10, 0, 10"/>
+                <Button x:Name="SearchInformationButton" Content="Search Information" Click="SearchInformationButton_Click"/>
             </StackPanel>
             
         </StackPanel>

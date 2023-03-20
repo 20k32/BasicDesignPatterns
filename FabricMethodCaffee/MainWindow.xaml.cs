@@ -4,7 +4,7 @@ using ChainOfResponsibility;
 using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Linq;
-using System.Security.Policy;
+using ChainOfResponsibility_Servers;
 
 namespace FabricMethodCaffee
 {
@@ -45,6 +45,10 @@ namespace FabricMethodCaffee
         DiscountHandler chemicalProductDiscount;
         DiscountHandler decorativeItemDiscount;
 
+        AbstractServer ukrainianServer;
+        AbstractServer americanServer;
+        AbstractServer russianServer;
+
         Random random = new Random();
 
         public MainWindow()
@@ -57,6 +61,10 @@ namespace FabricMethodCaffee
             foodProductsDiscount = new FoodProductDiscountHandler();
             chemicalProductDiscount = new ChemicalIndustryProductDiscountHandler();
             decorativeItemDiscount = new DecorativeItemDiscountHandler();
+
+            ukrainianServer = new UkrainianServer();
+            americanServer = new AmericanServer();
+            russianServer = new RussianServer();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -159,6 +167,41 @@ namespace FabricMethodCaffee
             {
                 DecorativeItemProduct productToDelete = decorativeProducts.Where(x => x.Name.Equals(decorativeProduct.Name)).FirstOrDefault()!;
                 decorativeProducts.Remove(productToDelete);
+            }
+        }
+
+        private void SearchInformationButton_Click(object sender, RoutedEventArgs e)
+        {
+            string searchOptions = SearchTextBox.Text;
+
+            List<string> searchedResults = new List<string>();
+
+            // chain
+            ukrainianServer.Search(searchOptions);
+            americanServer.Search(searchOptions);
+            russianServer.Search(searchOptions);
+
+            if (ukrainianServer.SearchResults != null)
+            {
+                searchedResults.AddRange(ukrainianServer.SearchResults);
+            }
+            if (americanServer.SearchResults != null)
+            {
+                searchedResults.AddRange(americanServer.SearchResults);
+            }
+            if (russianServer.SearchResults != null)
+            {
+                searchedResults.AddRange(russianServer.SearchResults);
+            }
+
+            if (searchedResults.Count > 0)
+            {
+                SearchTextBox.Text = PriceTextBox.Text = string.Empty;
+
+                foreach (var item in searchedResults)
+                {
+                    PriceTextBox.Text += item + Environment.NewLine;
+                }
             }
         }
     }

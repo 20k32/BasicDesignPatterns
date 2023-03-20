@@ -57,6 +57,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "ChainOfResponsibility_Servers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ChainOfResponsibility_Servers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChainOfResponsibility_Servers.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "CompositeLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -145,6 +158,11 @@
       "path": "../ChainOfResponsibility/ChainOfResponsibility.csproj",
       "msbuildProject": "../ChainOfResponsibility/ChainOfResponsibility.csproj"
     },
+    "ChainOfResponsibility_Servers/1.0.0": {
+      "type": "project",
+      "path": "../ChainOfResponsibility_Servers/ChainOfResponsibility_Servers.csproj",
+      "msbuildProject": "../ChainOfResponsibility_Servers/ChainOfResponsibility_Servers.csproj"
+    },
     "CompositeLibrary/1.0.0": {
       "type": "project",
       "path": "../CompositeLibrary/CompositeLibrary.csproj",
@@ -177,6 +195,7 @@
       "ArrayListAdapter >= 1.0.0",
       "BuilderLibrary >= 1.0.0",
       "ChainOfResponsibility >= 1.0.0",
+      "ChainOfResponsibility_Servers >= 1.0.0",
       "CompositeLibrary >= 1.0.0",
       "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
@@ -222,6 +241,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility\\ChainOfResponsibility.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility\\ChainOfResponsibility.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility_Servers\\ChainOfResponsibility_Servers.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\ChainOfResponsibility_Servers\\ChainOfResponsibility_Servers.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\CompositeLibrary\\CompositeLibrary.csproj"
