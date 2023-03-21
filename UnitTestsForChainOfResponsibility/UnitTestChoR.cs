@@ -15,16 +15,22 @@ namespace UnitTestsForChainOfResponsibility
             ukrainianServer.Search("Lorem ipsum");
             string[] ukrainianServerSearchResult = ukrainianServer.SearchResults;
             ukrainianServer.Search("lorem ipsum");
-            string[] ukrainianServerSearchResultLower = ukrainianServerSearchResult;
+            string[] ukrainianServerSearchResultLower = ukrainianServer.SearchResults;
 
-            Assert.AreEqual(ukrainianServerSearchResultLower, ukrainianServerSearchResult);
+            Assert.AreEqual(ukrainianServerSearchResultLower.Length, ukrainianServerSearchResult.Length);
+
+            for (int i = 0; i < ukrainianServerSearchResult.Length; i++)
+            {
+                Assert.AreEqual(ukrainianServerSearchResult[i], ukrainianServerSearchResultLower[i]);
+            }
         }
 
         [TestMethod]
         public void DifferentInformationFromServers_Test()
         {
             AbstractServer ukrainianServer = new UkrainianServer(),
-                           americanServer = new AmericanServer();
+                           americanServer = new AmericanServer(),
+                           russianServer = new RussianServer();
 
             string searchOption = "lorem ipsum";
 
@@ -34,7 +40,26 @@ namespace UnitTestsForChainOfResponsibility
             americanServer.Search(searchOption);
             string[] americanServerInformation = americanServer.SearchResults;
 
-            Assert.AreNotEqual(ukrainianServerInformation, americanServerInformation);
+            russianServer.Search(searchOption);
+            string[] russianServerInformation = russianServer.SearchResults;
+
+            int currentLength = ukrainianServerInformation.Length;
+            if (americanServerInformation.Length < currentLength)
+            {
+                currentLength = americanServerInformation.Length;
+            }
+            if (russianServerInformation.Length < currentLength)
+            {
+                currentLength = russianServerInformation.Length;
+            }
+
+            for (int i = 0; i < currentLength; i++)
+            {
+                Assert.AreNotEqual(americanServerInformation[i], russianServerInformation[i]);
+                Assert.AreNotEqual(russianServerInformation[i], ukrainianServerInformation[i]);
+                Assert.AreNotEqual(americanServerInformation[i], ukrainianServerInformation[i]);
+            }
+
         }
 
         [TestMethod]
