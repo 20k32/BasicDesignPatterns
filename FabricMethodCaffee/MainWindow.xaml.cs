@@ -62,9 +62,10 @@ namespace FabricMethodCaffee
             chemicalProductDiscount = new ChemicalIndustryProductDiscountHandler();
             decorativeItemDiscount = new DecorativeItemDiscountHandler();
 
-            ukrainianServer = new UkrainianServer();
-            americanServer = new AmericanServer();
             russianServer = new RussianServer();
+            americanServer = new AmericanServer(russianServer);
+            ukrainianServer = new UkrainianServer(americanServer);
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -176,10 +177,8 @@ namespace FabricMethodCaffee
 
             List<string> searchedResults = new List<string>();
 
-            // chain
+            // chain start
             ukrainianServer.Search(searchOptions);
-            americanServer.Search(searchOptions);
-            russianServer.Search(searchOptions);
 
             if (ukrainianServer.SearchResults != null)
             {

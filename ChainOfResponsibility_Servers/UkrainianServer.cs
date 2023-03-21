@@ -5,7 +5,7 @@ namespace ChainOfResponsibility_Servers
 {
     public class UkrainianServer : AbstractServer
     {
-        public UkrainianServer()
+        public UkrainianServer(AbstractServer Successor = null!) : base(Successor)
         {
             Information = new List<string>(new string[]
                 {
@@ -21,6 +21,16 @@ namespace ChainOfResponsibility_Servers
             SearchResults =
                 Information.Where(x => x.ToLower().Contains(searchOptions.ToLower()))
                            .ToArray();
+
+            if (successor != null && SearchResults.Length ==  0)
+            {
+                successor.Search(searchOptions);
+            }
+        }
+
+        public override void SetSuccessor(AbstractServer NewSuccessor)
+        {
+            successor = NewSuccessor;
         }
     }
 }
