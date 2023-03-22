@@ -102,5 +102,28 @@ namespace UnitTestsForChainOfResponsibility
             Assert.AreEqual(0, americanServerInformation.Length);
             Assert.AreEqual(2, russianServerInformation.Length);
         }
+
+        [TestMethod]
+        public void InformationNotFounded_Test()
+        {
+            AbstractServer ukrainianServer = new UkrainianServer(),
+                           americanServer = new AmericanServer(),
+                           russianServer = new RussianServer();
+
+           
+
+            string searchOption = "2345";
+            ukrainianServer.Search(searchOption);
+            americanServer.Search(searchOption);
+            russianServer.Search(searchOption);
+
+            string[] ukrainianServerInformation = ukrainianServer.SearchResults;
+            string[] americanServerInformation = americanServer.SearchResults;
+            string[] russianServerInformation = russianServer.SearchResults;
+
+            Assert.AreEqual(0, ukrainianServerInformation.Length);
+            Assert.AreEqual(0, americanServerInformation.Length);
+            Assert.AreEqual(0, russianServerInformation.Length);
+        }
     }
 }
