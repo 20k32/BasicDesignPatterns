@@ -108,9 +108,7 @@ namespace UnitTestsForChainOfResponsibility
         {
             AbstractServer ukrainianServer = new UkrainianServer(),
                            americanServer = new AmericanServer(),
-                           russianServer = new RussianServer();
-
-           
+                           russianServer = new RussianServer();   
 
             string searchOption = "2345";
             ukrainianServer.Search(searchOption);
