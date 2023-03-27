@@ -10,9 +10,12 @@
         FontSize="20"
         Background="LightSlateGray"
         Width="1019"
-        Height="800">
+        Height="Auto">
 
     <Window.Resources>
+        
+        <local:DoubleToIntConverter x:Key="DoubleToIntConverter" />
+
         <Style TargetType="{x:Type TextBox}" x:Key="ChatTextboxStyle">
             <Style.Setters>
                 <Setter Property="TextWrapping" Value="Wrap"/>
@@ -40,8 +43,9 @@
             </Style.Setters>
         </Style>
     </Window.Resources>
-    
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+
+    <Grid x:Name="ContentGrid" 
+        VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -90,6 +94,24 @@
             </ComboBox>
             <Button x:Name="SendButtonSync" Content="Send Sync" Width="200" Margin="0, 10, 0, 10"/>
             <Button x:Name="SendButtonASync" Content="Send ASync" Width="200"/>
+
+            <StackPanel Width="200" 
+                        Orientation="Horizontal" HorizontalAlignment="Center">
+                <ScrollBar 
+                    x:Name="DelayBar" 
+                    Orientation="Horizontal" 
+                    Width="100" Height="30" 
+                    Maximum="10" Minimum="1"/>
+                <TextBlock Text="{
+                                    Binding ElementName=DelayBar, 
+                                    Path=Value, 
+                                    Converter={StaticResource DoubleToIntConverter}
+                                 }"  
+                          MinWidth="10"
+                          Foreground="Black"
+                          Margin="20"/>
+            </StackPanel>
+            
         </StackPanel>
         
         

@@ -64,3 +64,4 @@ C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\De
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ChainOfResponsibility.pdb
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ChainOfResponsibility_Servers.dll
 C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\bin\Debug\net6.0-windows\ChainOfResponsibility_Servers.pdb
+C:\Users\egorm\Desktop\Repositories\FabricMethodCaffee\FabricMethodCaffee\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
