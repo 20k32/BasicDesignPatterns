@@ -128,32 +128,73 @@ namespace FabricMethodCaffee
                 return;
             }
 
+            ((Chat)Correspondence).SetDelay(int.Parse(DelayValueTextBox.Text));
+
             if (SendToBox.SelectedIndex != SendToBox.Items.Count - 1)
             {
                 switch (SendToBox.SelectedValue)
                 {
                     case "Bob":
                         {
-                            Correspondence.NotifyObserver(Bob, currentTextBox.Text);
+                            Correspondence.NotifyObserverSync(Bob, currentTextBox.Text);
                         }
                         break;
                     case "Rob":
                         {
-                            Correspondence.NotifyObserver(Rob, currentTextBox.Text);
+                            Correspondence.NotifyObserverSync(Rob, currentTextBox.Text);
                         }
                         break;
                     case "Alex":
                         {
-                            Correspondence.NotifyObserver(Alex, currentTextBox.Text);
+                            Correspondence.NotifyObserverSync(Alex, currentTextBox.Text);
                         }
                         break;
                 }
             }
             else
             {
-                Correspondence.NotifyObservers(currentTextBox.Text);
+                Correspondence.NotifyObserversSync(currentTextBox.Text);
             }
             currentTextBox.Text = string.Empty;
+        }
+
+        private async void SendButtonASync_Click(object sender, RoutedEventArgs e)
+        {
+            if (currentTextBox.Text.Trim() == string.Empty)
+            {
+                return;
+            }
+
+            string message = currentTextBox.Text;
+            currentTextBox.Text = string.Empty;
+
+            ((Chat)Correspondence).SetDelay(int.Parse(DelayValueTextBox.Text));
+
+            if (SendToBox.SelectedIndex != SendToBox.Items.Count - 1)
+            {
+                switch (SendToBox.SelectedValue)
+                {
+                    case "Bob":
+                        {
+                            await Correspondence.NotifyObserverAsync(Bob, message);
+                        }
+                        break;
+                    case "Rob":
+                        {
+                            await Correspondence.NotifyObserverAsync(Rob, message);
+                        }
+                        break;
+                    case "Alex":
+                        {
+                            await Correspondence.NotifyObserverAsync(Alex, message);
+                        }
+                        break;
+                }
+            }
+            else
+            {
+                await Correspondence.NotifyObserversAsync(message);
+            }
         }
     }
 }

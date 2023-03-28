@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Observer
 {
-    public class Chat : IObservable
+    public class Chat : IObservable, IDoOperationsWithDelay
     {
         private List<IObserver> observers = null!;
         private IObserver currentObserver = null!;
+        private int delay = default(int);
 
         public Chat()
         {
             observers = new List<IObserver>(3);
+        }
+
+        public void SetDelay(int value)
+        {
+            delay = value;
         }
 
         public void AddObserver(IObserver observer)
@@ -18,18 +26,25 @@ namespace Observer
             observers.Add(observer);
         }
 
-        public void NotifyObserver(IObserver observer, string Information)
+        public void DoDelay()
         {
+            Thread.Sleep(TimeSpan.FromSeconds(delay));
+        }
+
+        public void NotifyObserverSync(IObserver observer, string Information)
+        {
+            DoDelay();
             observer.Update($"[ {currentObserver.Name}, {DateTime.Now} ]\n{Information}");
         }
 
-        public void NotifyObservers(string Information)
+        public void NotifyObserversSync(string Information)
         {
             foreach (IObserver observer in observers)
             {
-                NotifyObserver(observer, Information);
+                NotifyObserverSync(observer, Information);
             }
         }
+
 
         public void RemoveObserver(IObserver observer)
         {
@@ -39,6 +54,22 @@ namespace Observer
         public void SetObserverThatNotifies(IObserver notifiesObserver)
         {
             currentObserver = notifiesObserver;
+        }
+
+        public async Task NotifyObserverAsync(IObserver observer, string Information)
+        {
+            await Task.Run(() =>
+            {
+                NotifyObserverSync(observer, Information);
+            });
+        }
+
+        public async Task NotifyObserversAsync(string Information)
+        {
+            foreach (IObserver observer in observers)
+            {
+                await NotifyObserverAsync(observer, Information);
+            }
         }
     }
 }
