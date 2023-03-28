@@ -123,8 +123,6 @@ namespace FabricMethodCaffee
 
         private void SendButtonSync_Click(object sender, RoutedEventArgs e)
         {
-            string tempInfo = null!;
-
             if (currentTextBox.Text.Trim() == string.Empty)
             {
                 return;
@@ -137,19 +135,16 @@ namespace FabricMethodCaffee
                     case "Bob":
                         {
                             Correspondence.NotifyObserver(Bob, currentTextBox.Text);
-                            tempInfo = BobTextBox.Text;
                         }
                         break;
                     case "Rob":
                         {
                             Correspondence.NotifyObserver(Rob, currentTextBox.Text);
-                            tempInfo = RobTextBox.Text;
                         }
                         break;
                     case "Alex":
                         {
                             Correspondence.NotifyObserver(Alex, currentTextBox.Text);
-                            tempInfo = AlexTextBox.Text;
                         }
                         break;
                 }
