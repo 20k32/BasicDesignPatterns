@@ -19,6 +19,7 @@
         <Style TargetType="{x:Type TextBox}" x:Key="ChatTextboxStyle">
             <Style.Setters>
                 <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="Width" Value="400"/>
                 <Setter Property="Height" Value="400"/>
                 <Setter Property="MinWidth" Value="300"/>
                 <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
@@ -67,17 +68,17 @@
         <Grid Grid.Row="1">
             <StackPanel x:Name="BobPanel" HorizontalAlignment="Center" Visibility="Visible">
                 <TextBlock Text="Bob" HorizontalAlignment="Center"/>
-                <TextBox Style="{StaticResource ChatTextboxStyle}"/>
+                <TextBox x:Name="BobChatTextBox" Style="{StaticResource ChatTextboxStyle}"/>
                 <TextBox x:Name="BobTextBox" Style="{StaticResource SendMesgTextBox}"/>
             </StackPanel>
             <StackPanel x:Name="RobPanel" HorizontalAlignment="Center" Visibility="Hidden">
                 <TextBlock Text="Rob" HorizontalAlignment="Center"/>
-                <TextBox Style="{StaticResource ChatTextboxStyle}"/>
+                <TextBox x:Name="RobChatTextBox" Style="{StaticResource ChatTextboxStyle}"/>
                 <TextBox x:Name="RobTextBox" Style="{StaticResource SendMesgTextBox}"/>
             </StackPanel>
             <StackPanel x:Name="AlexPanel" HorizontalAlignment="Center" Visibility="Hidden">
                 <TextBlock Text="Alex" HorizontalAlignment="Center"/>
-                <TextBox Style="{StaticResource ChatTextboxStyle}"/>
+                <TextBox x:Name="AlexChatTextBox" Style="{StaticResource ChatTextboxStyle}"/>
                 <TextBox x:Name="AlexTextBox" Style="{StaticResource SendMesgTextBox}"/>
             </StackPanel>
         </Grid>
@@ -92,7 +93,7 @@
                 <ComboBoxItem Content="Alex"/>
                 <ComboBoxItem Content="All"/>
             </ComboBox>
-            <Button x:Name="SendButtonSync" Content="Send Sync" Width="200" Margin="0, 10, 0, 10"/>
+            <Button x:Name="SendButtonSync" Content="Send Sync" Width="200" Margin="0, 10, 0, 10" Click="SendButtonSync_Click"/>
             <Button x:Name="SendButtonASync" Content="Send ASync" Width="200"/>
 
             <StackPanel Width="200" 

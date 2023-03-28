@@ -16,6 +16,7 @@
           "CompositeLibrary": "1.0.0",
           "DecoratorLibrary": "1.0.0",
           "FlyweightLibrary": "1.0.0",
+          "Observer": "1.0.0",
           "PrototypeLibrary": "1.0.0",
           "ProxyCalculator": "1.0.0"
         },
@@ -64,6 +65,11 @@
       "FlyweightLibrary/1.0.0": {
         "runtime": {
           "FlyweightLibrary.dll": {}
+        }
+      },
+      "Observer/1.0.0": {
+        "runtime": {
+          "Observer.dll": {}
         }
       },
       "PrototypeLibrary/1.0.0": {
@@ -120,6 +126,11 @@
       "sha512": ""
     },
     "FlyweightLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Observer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

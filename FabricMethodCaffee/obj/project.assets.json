@@ -109,6 +109,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Observer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Observer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Observer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "PrototypeLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -178,6 +191,11 @@
       "path": "../FlyweightLibrary/FlyweightLibrary.csproj",
       "msbuildProject": "../FlyweightLibrary/FlyweightLibrary.csproj"
     },
+    "Observer/1.0.0": {
+      "type": "project",
+      "path": "../Observer/Observer.csproj",
+      "msbuildProject": "../Observer/Observer.csproj"
+    },
     "PrototypeLibrary/1.0.0": {
       "type": "project",
       "path": "../Prototype/PrototypeLibrary.csproj",
@@ -199,6 +217,7 @@
       "CompositeLibrary >= 1.0.0",
       "DecoratorLibrary >= 1.0.0",
       "FlyweightLibrary >= 1.0.0",
+      "Observer >= 1.0.0",
       "PrototypeLibrary >= 1.0.0",
       "ProxyCalculator >= 1.0.0"
     ]
@@ -253,6 +272,9 @@
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\FlyweightLibrary\\FlyweightLibrary.csproj"
+            },
+            "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Observer\\Observer.csproj": {
+              "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Observer\\Observer.csproj"
             },
             "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj": {
               "projectPath": "C:\\Users\\egorm\\Desktop\\Repositories\\FabricMethodCaffee\\Prototype\\PrototypeLibrary.csproj"

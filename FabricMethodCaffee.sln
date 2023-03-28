@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility_Servers", "ChainOfResponsibility_Servers\ChainOfResponsibility_Servers.csproj", "{D1C060D5-24A7-419E-B6A1-EC53617FED2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsForChainOfResponsibility", "UnitTestsForChainOfResponsibility\UnitTestsForChainOfResponsibility.csproj", "{2C13017E-D0D8-4A62-98EF-496148743A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsForChainOfResponsibility", "UnitTestsForChainOfResponsibility\UnitTestsForChainOfResponsibility.csproj", "{2C13017E-D0D8-4A62-98EF-496148743A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{614FA312-872D-4405-87C9-F3A8E5F3EA14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{2C13017E-D0D8-4A62-98EF-496148743A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C13017E-D0D8-4A62-98EF-496148743A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C13017E-D0D8-4A62-98EF-496148743A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614FA312-872D-4405-87C9-F3A8E5F3EA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614FA312-872D-4405-87C9-F3A8E5F3EA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614FA312-872D-4405-87C9-F3A8E5F3EA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614FA312-872D-4405-87C9-F3A8E5F3EA14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

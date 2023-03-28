@@ -27,6 +27,7 @@
     <ProjectReference Include="..\CompositeLibrary\CompositeLibrary.csproj" />
     <ProjectReference Include="..\DecoratorLibrary\DecoratorLibrary.csproj" />
     <ProjectReference Include="..\FlyweightLibrary\FlyweightLibrary.csproj" />
+    <ProjectReference Include="..\Observer\Observer.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeLibrary.csproj" />
     <ProjectReference Include="..\ProxyCalculator\ProxyCalculator.csproj" />
   </ItemGroup>
